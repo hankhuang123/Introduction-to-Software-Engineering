@@ -1,0 +1,2 @@
+The bug in server.js was in the app.delete request where it would only send a 500 error.
+The bug in App.js caused the note to delete itself on the frontend before getting a comfirmation from the backend.
