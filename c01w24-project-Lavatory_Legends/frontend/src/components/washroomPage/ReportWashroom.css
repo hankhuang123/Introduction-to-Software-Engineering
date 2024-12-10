@@ -1,0 +1,80 @@
+.form-container {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 430px;
+  margin: auto;
+}
+
+.report-container {
+  max-width: 430px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-height: 932px;
+  overflow-y: auto;
+  padding-bottom: 70px;
+}
+
+.header {
+  background-color: rgb(255, 255, 255);
+  color: rgb(254, 0, 0);
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+.prompt {
+  background-color: #ffffff;
+  color: rgb(97, 93, 93);
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.issue-type {
+  color: red;
+  margin: 20px 0;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  text-align: left;
+  cursor: pointer;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.comment-box {
+  width: 90%;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.submit-button {
+  background-color: white;
+  border: 1px solid #ccc;
+  color: black;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  width: auto;
+}
+
+.button-icon {
+  height: 20px;
+  width: auto;
+}

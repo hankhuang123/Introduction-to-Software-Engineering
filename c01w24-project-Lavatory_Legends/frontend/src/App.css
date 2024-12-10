@@ -1,0 +1,372 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-form {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.signup-form h2 {
+  margin-bottom: 20px;
+}
+
+.signup-form input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ed5054;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signup-form img {
+  width: 70%;
+}
+
+.signup-form .small-note {
+  color: #ccc;
+  font-size: 80%;
+}
+
+.signup-form button:hover {
+  background-color: #ed5054;
+}
+
+.signup-form .signin-links {
+  margin-top: 15px;
+}
+
+.signup-form .signin-links a {
+  color: #3498db;
+}
+
+.signup-form .error {
+  color: red;
+  margin-bottom: 15px;
+}
+
+/* Admin Inbox Styles */
+.home-page {
+  width: 300px;
+  text-align: left;
+  background: #fff;
+}
+
+.home-header {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  color: #ed5054;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.home-footnotes {
+  margin-left: 10px;
+  padding-bottom: 10px;
+  color: #a9a2a2;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.request-list {
+  margin-bottom: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.request-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.request-item header {
+  padding-bottom: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.request-item info {
+  display: block;
+  color: #a9a2a2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.no-request-error {
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+
+.request-list p {
+  margin-left: 10px;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* WashroomInfo and Request Approval Styles */
+.approval-form {
+  margin: 10px;
+  font-size: 13px;
+  color: #3b3b3b;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.approval-form header {
+  font-size: 16px;
+  padding-top: 5px;
+  color: #141414;
+  font-weight: 600;
+}
+
+.approval-form img {
+  margin-right: 5px;
+}
+
+.washroom-info {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  font-size: 13px;
+  color: #3b3b3b;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.save-button {
+  padding: 7px;
+  width: 57px;
+  cursor: pointer;
+  background-color: white;
+  color: #141414;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #d8d4d4;
+  border-radius: 5px;
+}
+
+.small-header {
+  color: #ed5054;
+  font-weight: 700;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d8d4d4;
+}
+
+.comments {
+  margin-bottom: 10px;
+}
+
+.footnotes {
+  color: #a9a2a2;
+  font-size: 12px;
+  font-weight: 600;
+  max-width: 600px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 280px;
+  width: 90%;
+}
+
+.modal-content textarea {
+  width: 90%;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.open-schedule {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 13px;
+  color: #3b3b3b;
+  list-style-type: none;
+  padding: 0;
+}
+
+.open-schedule li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-schedule .hours {
+  /* flex: 1; */
+  text-align: right;
+}
+
+.left-right-buttons {
+  display: block;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.btn-left,
+.btn-right {
+  padding: 5px;
+  width: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ededed;
+  color: #141414;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-left {
+  float: left;
+}
+
+.btn-right {
+  float: right;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #d8d4d4;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  padding-bottom: 4pc;
+}
+
+.footer-buttons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+}
+
+.button-icon {
+  margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Washroom Form */
+.form-container {
+  position: relative; 
+  height: auto;
+  width: 100%; 
+  max-width: 430px; 
+  margin: auto; 
+}
+.washroomForm {
+  max-width: 430px;
+  background-color: #fff;
+  border-radius: 8px;
+  max-height: 932px;
+  overflow-y: auto;
+}
+.washroomForm h2 {
+  background-color: rgb(255, 255, 255);
+  color: rgb(254, 0, 0);
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+}
+
+input, textarea {
+  padding: 1%;
+  margin-top: 5%;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+}
+
+
+.button-with-image img {  /*approve deny*/
+  width: 20px;
+  height: auto;
+  margin-right: 5px; 
+  vertical-align: middle;
+}
+
+.location-marker {  /* picture of location */
+  width: 20px; 
+  height: auto;
+  margin-right: 5px; 
+  vertical-align: middle; 
+}
+
+.section-icon {  /*Opening_Schedule design*/
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px; 
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
